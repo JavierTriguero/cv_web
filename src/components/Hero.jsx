@@ -97,9 +97,11 @@ export default function Hero() {
   return (
     <section id="inicio" className="relative flex min-h-svh items-center overflow-hidden pt-24 pb-16">
       <div className="bg-grid absolute inset-0" />
-      <div className="blob -top-32 -left-32 h-96 w-96 bg-lime" />
-      <div className="blob top-1/3 -right-40 h-[28rem] w-[28rem] bg-cyan [animation-delay:-6s]" />
-      <div className="blob -bottom-40 left-1/3 h-80 w-80 bg-violet [animation-delay:-12s]" />
+      <div className="glow-layer fade-bottom">
+        <div className="blob -top-64 -left-64 h-[44rem] w-[44rem] text-lime" />
+        <div className="blob top-[15%] -right-72 h-[48rem] w-[48rem] text-cyan [animation-delay:-6s]" />
+        <div className="blob top-[45%] left-1/4 h-[40rem] w-[40rem] text-violet [animation-delay:-12s]" />
+      </div>
 
       <div className="relative mx-auto grid w-full max-w-6xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-[1.2fr_1fr]">
         <div className="text-center lg:text-left">

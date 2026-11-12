@@ -50,12 +50,25 @@ body {
   mask-image: radial-gradient(ellipse at 50% 30%, black 20%, transparent 75%);
 }
 
-/* Manchas de color animadas */
+/* Capa de luces: se desvanece en los bordes para que no se vea ningún corte recto */
+.glow-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent);
+}
+
+.glow-layer.fade-bottom {
+  mask-image: linear-gradient(to bottom, black 70%, transparent);
+}
+
+/* Manchas de color animadas: degradado radial que llega a transparente (sin filter: blur) */
 .blob {
   position: absolute;
   border-radius: 9999px;
-  filter: blur(90px);
-  opacity: 0.35;
+  background: radial-gradient(closest-side, currentColor, transparent);
+  opacity: 0.22;
   animation: float 18s ease-in-out infinite alternate;
 }
 

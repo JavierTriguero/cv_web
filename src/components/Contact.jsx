@@ -34,7 +34,9 @@ export default function Contact() {
 
   return (
     <section id="contacto" className="relative overflow-hidden px-4 py-28 sm:px-6">
-      <div className="blob top-10 left-1/2 h-96 w-96 -translate-x-1/2 bg-lime opacity-20" />
+      <div className="glow-layer">
+        <div className="blob top-0 left-1/2 -ml-[22rem] h-[44rem] w-[44rem] text-lime" />
+      </div>
 
       <div className="relative mx-auto max-w-4xl text-center">
         <Reveal>
