@@ -35,7 +35,7 @@ function Avatar() {
     <div className="relative mx-auto h-56 w-56 sm:h-72 sm:w-72">
       {/* Anillo de gradiente giratorio */}
       <div className="absolute -inset-1 animate-[spin_8s_linear_infinite] rounded-full bg-[conic-gradient(from_0deg,var(--color-lime),var(--color-cyan),var(--color-violet),var(--color-lime))] opacity-80 blur-[2px]" />
-      <div className="absolute inset-0 overflow-hidden rounded-full border-4 border-ink bg-panel">
+      <div className="absolute inset-0 overflow-hidden rounded-full border-4 border-ink bg-panel bg-[radial-gradient(circle_at_50%_38%,rgb(163_230_53/0.38),rgb(34_211_238/0.18)_50%,transparent_75%)]">
         {failed ? (
           <div className="flex h-full w-full items-center justify-center font-mono text-6xl font-bold sm:text-7xl">
             <span className="text-gradient">JT</span>
@@ -45,7 +45,7 @@ function Avatar() {
             src={profile.photo}
             alt={profile.name}
             onError={() => setFailed(true)}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-[center_15%]"
           />
         )}
       </div>

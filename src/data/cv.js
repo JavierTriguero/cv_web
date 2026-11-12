@@ -11,8 +11,8 @@ export const profile = {
   website: 'https://www.javiertrigueropomares.com',
   github: 'https://github.com/JavierTriguero',
   githubUser: 'JavierTriguero',
-  // Coloca tu foto en /public/foto.jpg; si no existe se muestran las iniciales.
-  photo: 'foto.jpg',
+  // Foto en /public/foto.png (fondo transparente); si no existe se muestran las iniciales.
+  photo: 'foto.png',
   available: true,
   about:
     'Desarrollador Full Stack con más de 6 años de experiencia en Java/Spring y React, en proyectos para clientes como Iberdrola y Zurich. He diseñado arquitecturas desde cero, coordinado equipos de desarrollo y modernizado aplicaciones heredadas. Trabajo a diario con IA (GitHub Copilot, Claude Code) y la integro en aplicaciones mediante LLMs.',
