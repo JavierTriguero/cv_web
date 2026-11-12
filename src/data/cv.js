@@ -8,7 +8,7 @@ export const profile = {
   roles: ['Java & Spring Boot', 'React & PrimeReact', 'Arquitectura desde cero', 'Liderazgo técnico', 'IA aplicada con LLMs'],
   location: 'Elche / Alicante',
   email: 'javiertrigueropomares@gmail.com',
-  website: 'https://www.javiertrigueropomares.com',
+  website: 'https://javiertriguero.dev',
   github: 'https://github.com/JavierTriguero',
   githubUser: 'JavierTriguero',
   // Foto en /public/foto.png (fondo transparente); si no existe se muestran las iniciales.
