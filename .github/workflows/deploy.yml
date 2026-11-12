@@ -3,6 +3,11 @@ name: Publicar en GitHub Pages
 on:
   push:
     branches: [main]
+  # Si GitHub lanza su despliegue automático ("pages build and deployment"),
+  # que publica el código sin compilar, volvemos a publicar la versión buena justo después.
+  workflow_run:
+    workflows: ['pages build and deployment']
+    types: [completed]
   workflow_dispatch:
 
 permissions:
